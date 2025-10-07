@@ -1,3 +1,4 @@
+import React from "react";
 import { NetworkBackground } from "./components/NetworkBackground";
 import { Button } from "./components/ui/button";
 import { ArrowRight, Building2, Brain, Code } from "lucide-react";
@@ -8,21 +9,21 @@ const founders = [
     name: "Fareza Yuza",
     role: "AI Systems Architect",
     expertise: "System Inovation",
-    image: "https://images.unsplash.com/photo-1652471943570-f3590a4e52ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMGhlYWRzaG90fGVufDF8fHx8MTc1OTcyMzM4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "/src/public/images/pasfoto_reza.png",
     bio: "Fareza is the architect behind our cognitive framework. Specializing in Knowledge Graphs, he leads the innovation of our core technology to understand data at its most fundamental level.",
   },
   {
     name: "Ghany Widito Baskoro",
     role: "Product & Business Strategist",
     expertise: "Product Strategy",
-    image: "https://images.unsplash.com/photo-1758518727888-ffa196002e59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxleGVjdXRpdmUlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NTk3MjMzODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "/src/public/images/pasfoto_ghany.png",
     bio: "Ghany bridges our advanced technology with real-world market needs. With a background as a Product Owner and ERP Specialist, he ensures our solution solves critical business problems.",
   },
   {
     name: "Muhammad Salman Al Hafizh",
     role: "Lead Software Engineer",
     expertise: "Technical Leadership",
-    image: "https://images.unsplash.com/photo-1618593706014-06782cd3bb3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwcHJvZmVzc2lvbmFsJTIwaGVhZHNob3R8ZW58MXx8fHwxNzU5Nzc3MzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "/src/public/images/pasfoto_hafizh.png",
     bio: "Salman is the technical execution force turning complex architecture into a robust, scalable product. His experience as a Lead Developer ensures our vision is realized as an enterprise-ready platform.",
   },
 ];
