@@ -1,7 +1,6 @@
-import React from "react";
 import { NetworkBackground } from "./components/NetworkBackground";
 import { Button } from "./components/ui/button";
-import { ArrowRight, Building2, Brain, Code } from "lucide-react";
+import { ArrowRight, Building2, Brain, Code, Linkedin, Github } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 
 const founders = [
@@ -9,22 +8,33 @@ const founders = [
     name: "Fareza Yuza",
     role: "AI Systems Architect",
     expertise: "System Inovation",
-    image: "/src/public/images/pasfoto_reza.png",
+    image: "/images/pasfoto_reza.png",
     bio: "Fareza is the architect behind our cognitive framework. Specializing in Knowledge Graphs, he leads the innovation of our core technology to understand data at its most fundamental level.",
+    social: {
+      linkedin: "https://www.linkedin.com/in/fareza-yuza-963314240/",
+      github: "https://github.com/kodox45"
+    }
   },
   {
     name: "Ghany Widito Baskoro",
     role: "Product & Business Strategist",
     expertise: "Product Strategy",
-    image: "/src/public/images/pasfoto_ghany.png",
+    image: "/images/pasfoto_ghany.png",
     bio: "Ghany bridges our advanced technology with real-world market needs. With a background as a Product Owner and ERP Specialist, he ensures our solution solves critical business problems.",
+    social: {
+      linkedin: "https://www.linkedin.com/in/ghany-widito-baskoro-462221191/"
+    }
   },
   {
     name: "Muhammad Salman Al Hafizh",
     role: "Lead Software Engineer",
     expertise: "Technical Leadership",
-    image: "/src/public/images/pasfoto_hafizh.png",
+    image: "/images/pasfoto_hafizh.png",
     bio: "Salman is the technical execution force turning complex architecture into a robust, scalable product. His experience as a Lead Developer ensures our vision is realized as an enterprise-ready platform.",
+    social: {
+      linkedin: "https://www.linkedin.com/in/msalmanalhafizh/",
+      github: "https://github.com/piztanza"
+    }
   },
 ];
 
@@ -109,6 +119,29 @@ export default function App() {
                   <div>
                     <h3 className="text-2xl">{founder.name}</h3>
                     <p className="text-[#3B82F6]">{founder.role}</p>
+                  </div>
+                  
+                  <div className="flex gap-3 pt-2">
+                    {founder.social.linkedin && (
+                      <a 
+                        href={founder.social.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-9 h-9 rounded-full bg-[#1a2332] flex items-center justify-center hover:bg-[#3B82F6] transition-colors group"
+                      >
+                        <Linkedin className="w-4 h-4 text-[#9CA3AF] group-hover:text-white transition-colors" />
+                      </a>
+                    )}
+                    {founder.social.github && (
+                      <a 
+                        href={founder.social.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-9 h-9 rounded-full bg-[#1a2332] flex items-center justify-center hover:bg-[#3B82F6] transition-colors group"
+                      >
+                        <Github className="w-4 h-4 text-[#9CA3AF] group-hover:text-white transition-colors" />
+                      </a>
+                    )}
                   </div>
                   
                   <div className="pt-2 space-y-2">
