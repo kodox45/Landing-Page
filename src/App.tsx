@@ -121,7 +121,7 @@ export default function App() {
                     <p className="text-[#3B82F6]">{founder.role}</p>
                   </div>
                   
-                  <div className="flex gap-3 pt-2">
+                  <div className="flex gap-4 pt-2">
                     {founder.social.linkedin && (
                       <a 
                         href={founder.social.linkedin}
@@ -129,7 +129,7 @@ export default function App() {
                         rel="noopener noreferrer"
                         className="w-9 h-9 rounded-full bg-[#1a2332] flex items-center justify-center hover:bg-[#3B82F6] transition-colors group"
                       >
-                        <Linkedin className="w-4 h-4 text-[#9CA3AF] group-hover:text-white transition-colors" />
+                        <Linkedin className="w-5 h-5 text-[#9CA3AF] group-hover:text-white transition-colors" />
                       </a>
                     )}
                     {founder.social.github && (
@@ -139,7 +139,7 @@ export default function App() {
                         rel="noopener noreferrer"
                         className="w-9 h-9 rounded-full bg-[#1a2332] flex items-center justify-center hover:bg-[#3B82F6] transition-colors group"
                       >
-                        <Github className="w-4 h-4 text-[#9CA3AF] group-hover:text-white transition-colors" />
+                        <Github className="w-5 h-5 text-[#9CA3AF] group-hover:text-white transition-colors" />
                       </a>
                     )}
                   </div>
